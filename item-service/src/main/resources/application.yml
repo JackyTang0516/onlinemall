@@ -1,0 +1,33 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: itemservice
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/heima?&useSSL=false
+    username: root
+    password: 12345678
+    driver-class-name: com.mysql.jdbc.Driver
+  cloud:
+    nacos:
+      server-addr: localhost:8848 # nacos地址
+  rabbitmq:
+#    host: 192.168.150.101
+    host: 127.0.0.1
+    port: 5672
+    username: itcast
+    password: 123
+    virtual-host: /
+mybatis-plus:
+  type-aliases-package: com.hmall.item.pojo
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      update-strategy: not_null
+      id-type: auto
+logging:
+  level:
+    com.hmall: debug
+  pattern:
+    dateformat: HH:mm:ss:SSS

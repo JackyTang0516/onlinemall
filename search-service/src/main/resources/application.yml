@@ -1,0 +1,20 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: searchservice
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+  rabbitmq:
+    #    host: 192.168.150.101
+    host: 127.0.0.1
+    port: 5672
+    username: itcast
+    password: 123
+    virtual-host: /
+logging:
+  level:
+    cn.itcast: debug
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS
