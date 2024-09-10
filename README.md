@@ -1,4 +1,4 @@
-# Flashsale-System
+# Flashsale-Online Mall
 
 ## Introduction
 This project presents a high-performance shopping system, expertly developed in Java using Spring Boot. Designed to handle high traffic volumes, this system showcases robustness and efficiency, ideal for demanding e-commerce environments.
